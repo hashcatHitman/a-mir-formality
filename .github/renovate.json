@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "extends": ["schedule:monthly"]
+      "extends": ["schedule:monthly", ":semanticCommitTypeAll(ops)"]
     }
   ]
 }
