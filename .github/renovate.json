@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>rust-lang/renovate"],
+  "minimumReleaseAge": "7 days",
+  "lockFileMaintenance": {
+    "extends": ["schedule:monthly"]
+  },
+  "enabledManagers": ["github-actions"],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "extends": ["schedule:monthly", ":semanticCommitTypeAll(ops)"]
+    }
+  ]
+}
