@@ -5,11 +5,8 @@
   "lockFileMaintenance": {
     "extends": ["schedule:monthly"]
   },
+  "enabledManagers": ["github-actions"],
   "packageRules": [
-    {
-      "enabled": false,
-      "matchCategories": ["rust", "js"]
-    },
     {
       "matchManagers": ["github-actions"],
       "extends": ["schedule:monthly"]
