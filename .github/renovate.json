@@ -5,6 +5,7 @@
   "lockFileMaintenance": {
     "extends": ["schedule:monthly"]
   },
+  "commitMessageLowerCase": "never",
   "enabledManagers": ["github-actions"],
   "packageRules": [
     {
